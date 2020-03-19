@@ -107,7 +107,7 @@
 - name: InternalApi
   name_lower: internal_api
   vip: true
-  vlan: 6 
+  vlan: 6
   ip_subnet: '172.16.2.0/24'
   allocation_pools: [{'start': '172.16.2.4', 'end': '172.16.2.250'}]
   ipv6_subnet: 'fd00:fd00:fd00:2000::/64'
@@ -139,7 +139,7 @@
   enabled: true
   vip: false  # Management network does not use VIPs
   name_lower: management
-  vlan: 60
+  vlan: 8
   ip_subnet: '10.0.1.0/24'
   allocation_pools: [{'start': '10.0.1.4', 'end': '10.0.1.250'}]
   gateway_ip: '10.0.1.1'
