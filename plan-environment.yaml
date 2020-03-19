@@ -7,6 +7,7 @@ template: overcloud.yaml
 environments:
   - path: overcloud-resource-registry-puppet.yaml
   - path: environments/my-nic-vlans.yaml
+  - path: environments/network-isolation.yaml
 parameter_defaults:
   OvercloudControllerFlavor: control
   OvercloudComputeFlavor: compute
