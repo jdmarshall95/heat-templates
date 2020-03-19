@@ -190,7 +190,7 @@ resources:
       config:
         str_replace:
           template:
-            get_file: /usr/share/openstack-tripleo-heat-templates/network/scripts/run-os-net-config.sh
+            get_file: ../scripts/run-os-net-config.sh
           params:
             $network_config:
               network_config:
@@ -198,7 +198,7 @@ resources:
                 name: nic1
                 mtu:
                   1500
-                use_dhcp: true      
+                use_dhcp: true
               - type: ovs_bridge
                 name: bridge_name
                 mtu:
