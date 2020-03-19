@@ -7,6 +7,6 @@
 # include network-isolation.yaml.
 resource_registry:
   # Network configuration assignments for the Controller
-  OS::TripleO::Controller::Net::SoftwareConfig: network/config/my-nic-vlans/controller.yaml
+  OS::TripleO::Controller::Net::SoftwareConfig: ../network/config/my-nic-vlans/controller.yaml
   # Network configuration assignments for the Compute
-  OS::TripleO::Compute::Net::SoftwareConfig: network/config/my-nic-vlans/compute.yaml
+  OS::TripleO::Compute::Net::SoftwareConfig: ../network/config/my-nic-vlans/compute.yaml
