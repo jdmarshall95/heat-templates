@@ -238,17 +238,6 @@ resources:
                       - get_param: StorageInterfaceRoutes
                 - type: vlan
                   mtu:
-                    get_param: StorageMgmtMtu
-                  vlan_id:
-                    get_param: StorageMgmtNetworkVlanID
-                  addresses:
-                  - ip_netmask:
-                      get_param: StorageMgmtIpSubnet
-                  routes:
-                    list_concat_unique:
-                      - get_param: StorageMgmtInterfaceRoutes
-                - type: vlan
-                  mtu:
                     get_param: InternalApiMtu
                   vlan_id:
                     get_param: InternalApiNetworkVlanID
